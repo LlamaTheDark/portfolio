@@ -1,74 +1,82 @@
-@media only screen and (max-width: 401){
-    * {
-        /* background-color: beige; */
-        margin: 0;
-        padding: 0 2px 0 2px;
-        box-sizing: border-box;
-    }
 
-    body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+* {
+    background-color: beige;
+    margin: 0;
+    padding: 0 2px 0 2px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
+.page {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    padding: 20px 0;
+    width: 60%;
+}
+
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    padding: 20px 0;
+    width: 60%;
+}
+@media only screen and (max-width: 400px) {
     .page {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-
-        padding: 20px 0;
-        width: 60%;
+        width: 90%;
     }
+}
 
-    .page {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-wrap: wrap;
+.header {
+    align-self: stretch;
+    background-color: bisque;
 
-        padding: 20px 0;
-        width: 60%;
-    }
+    font-size: 40px; 
+    text-align: center;
 
-    .header {
-        align-self: stretch;
-        background-color: bisque;
+    font-weight: bold;
+    padding: 10px 0 0 10px;
+}
+.footer {
+    align-self: stretch;
+    background-color: bisque;
 
-        font-size: 40px; 
-        text-align: center;
+    padding: 20px 0;
 
-        font-weight: bold;
-        padding: 10px 0 0 10px;
-    }
-    .footer {
-        align-self: stretch;
-        background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
-        padding: 20px 0;
+    font-size: 20px; 
+    text-align: center;
 
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+    font-weight: bold;
+    padding: 50 0 50px 0;
+}
+.footer h2 {
+    background-color: bisque;
+}
+.footer div {
+    background-color: bisque;
+    padding: 0 0 0 10px;
+}
+.footer div a {
+    background-color: bisque;
+}
 
-        font-size: 20px; 
-        text-align: center;
 
-        font-weight: bold;
-        padding: 50 0 50px 0;
-    }
-    .footer h2 {
-        background-color: bisque;
-    }
-    .footer div {
-        background-color: bisque;
-        padding: 0 0 0 10px;
-    }
-    .footer div a {
-        background-color: bisque;
-    }
-
+@media only screen and (min-width: 401px){
     .sub-page {
         padding: 10px;
         margin: 10px;
@@ -77,29 +85,36 @@
         display: flex;
         justify-content: center;
     }
-
-    #about-me {
-        flex: 1;
+}
+@media only screen and (max-width: 400px){
+    .sub-page {
+        padding: 1px;
+        margin: 1px;
     }
+}
 
-    #projects {
-        flex: 1;
-    }
 
-    #experience {
-        flex: 1;
-    }
+#about-me {
+    flex: 1;
+}
 
-    #title {
-        margin-top: 20px;
-    }
+#projects {
+    flex: 1;
+}
 
-    .sub-topic {
-        padding: 0 0 0 10px;
-        background-color: darkkhaki;
-    }
+#experience {
+    flex: 1;
+}
 
-    ul {
-        padding: 0 25px 0 25px;
-    }
+#title {
+    margin-top: 20px;
+}
+
+.sub-topic {
+    padding: 0 0 0 10px;
+    background-color: darkkhaki;
+}
+
+ul {
+    padding: 0 25px 0 25px;
 }
